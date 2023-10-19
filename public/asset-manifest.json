@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd376f1d.css",
+    "main.js": "/static/js/main.be3e1223.js",
+    "static/media/Deborah_Image.png": "/static/media/Deborah_Image.4f1211d4ee523960c3a3.png",
+    "static/media/frame_1.png": "/static/media/frame_1.8445b9a899fbcf43d929.png",
+    "static/media/Frame 2.svg": "/static/media/Frame 2.79d0337710480923756cdf81c17e8ef1.svg",
+    "index.html": "/index.html",
+    "main.fd376f1d.css.map": "/static/css/main.fd376f1d.css.map",
+    "main.be3e1223.js.map": "/static/js/main.be3e1223.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd376f1d.css",
+    "static/js/main.be3e1223.js"
+  ]
+}

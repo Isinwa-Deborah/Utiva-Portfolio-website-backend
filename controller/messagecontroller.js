@@ -1,24 +1,23 @@
-let message = require("../model/messagemodel")
+const Message = require("../model/messagemodel");
 
+// const home = async (req, res) => {
+// 	res.send("index");
 
-const home = async (req, res) => {
+// 	next();
+// };
 
-    res.send("index");
-}
+exports.add_message = async (req, res) => {
+	let message = new Message(req.body);
 
+	let response = await message
+		.save()
+		.then(() => {
+			return "successfully sent message";
+		})
+		.catch((err) => {
+			console.log(err);
+			next();
+		});
 
-const add_message = async (req, res) => {
-
-    let message = new Message(req.body);
-    message.save().then(() => {
-        // res.redirect("/home");
-        res.json("successfully sent message")
-    }).catch((err) => {
-        console.log(err);
-    })
-
-    // res.json(`successfully sent message`)
-}
-
-module.exports = add_message, home;
-
+	res.send(response);
+};
